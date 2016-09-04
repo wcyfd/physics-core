@@ -23,7 +23,7 @@ public class World {
 		return container;
 	}
 
-	public void addEntity(Node entity) {
+	public void addNode(Node entity) {
 		if (container.contains(entity))
 			return;
 		container.add(entity);
