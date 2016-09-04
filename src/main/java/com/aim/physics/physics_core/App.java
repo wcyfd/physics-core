@@ -38,7 +38,7 @@ public class App {
 			timeLine.sleep(1000);
 			w.update(0.01f);
 			cd.detect();
-			
+			cr.resolution();
 		}
 	}
 }
