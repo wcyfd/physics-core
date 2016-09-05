@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.aim.physics.physics_core.entity.Node;
 import com.aim.physics.physics_core.entity.World;
+import com.aim.physics.physics_core.entity.util.Rect;
 import com.aim.physics.physics_core.entity.util.Vector2d;
 
 public class CollisionDetector {
@@ -32,8 +33,14 @@ public class CollisionDetector {
 
 		Vector2d pos = node1.getPosition();
 		Vector2d size = node1.getSize();
+
+		Rect rect = new Rect(pos,size);
 		
+		
+
 		return true;
 	}
+	
+	
 
 }

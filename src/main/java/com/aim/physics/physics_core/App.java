@@ -1,7 +1,6 @@
 package com.aim.physics.physics_core;
 
 import com.aim.physics.physics_core.entity.Node;
-import com.aim.physics.physics_core.entity.TimeLine;
 import com.aim.physics.physics_core.entity.World;
 import com.aim.physics.physics_core.entity.util.Vector2d;
 
@@ -15,8 +14,6 @@ public class App {
 
 		World w = new World();
 		w.setSize(new Vector2d(100, 120));
-
-		TimeLine timeLine = new TimeLine();
 
 		Node rect1 = new Node();
 		Node rect2 = new Node();
@@ -35,7 +32,6 @@ public class App {
 		CollisionResolution cr = new CollisionResolution();
 
 		while (true) {
-			timeLine.sleep(1000);
 			w.update(0.01f);
 			cd.detect();
 			cr.resolution();
